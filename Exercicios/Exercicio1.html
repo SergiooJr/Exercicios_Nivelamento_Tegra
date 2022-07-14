@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercício 1</title>
+    </head>
+    <body>
+        <h1>Exercício 1</h1>
+        <form method="post">
+            <p>
+                <label>Largura do terreno: </label>
+                <input type="number" id="largura" name="largura">
+            </p>
+            <p>
+                <label>Comprimento do terreno: </label>
+                <input type="number" id="comprimento" name="comprimento">
+            </p>
+            <p>
+                <label>Valor do metro quadrado: </label>
+                <input type="number" id="valorMetro" name="valorMetro">
+            </p>
+            <input type="button" onclick="capturar()" value="Enviar">
+        </form>
+        <p id="area"></p>
+        <p id="preco"></p>
+        <script>
+            function capturar(){
+                var largura = document.getElementById("largura").value;
+                var comprimento = document.getElementById("comprimento").value;
+                var valorMetro = document.getElementById("valorMetro").value;
+
+                var area = largura * comprimento;
+                var preco = area * valorMetro;    
+
+                mostra = document.getElementById("area").innerHTML = "A área do terreno = " + area.toFixed(2);
+                mostra2 = document.getElementById("preco").innerHTML = "Preço do terreno = " + preco.toFixed(2);
+            }
+        </script>
+    </body>
+</html>
+
