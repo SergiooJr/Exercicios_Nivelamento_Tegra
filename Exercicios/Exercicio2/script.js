@@ -11,7 +11,7 @@ btn.addEventListener("click", function(e){
     var diagonal = Math.sqrt(Math.pow(base, 2) + Math.pow(altura, 2));
     */    
 
-    mostra = document.getElementById("area").innerHTML = "ÁREA = " + area.toFixed(4);
-    mostra2 = document.getElementById("perimetro").innerHTML = "PERÍMETRO = " + perimetro.toFixed(4);
-    mostra3 = document.getElementById("diagonal").innerHTML = "DIAGONAL = " + diagonal.toFixed(4);
+    document.getElementById("area").innerHTML = "ÁREA = " + area.toFixed(4);
+    document.getElementById("perimetro").innerHTML = "PERÍMETRO = " + perimetro.toFixed(4);
+    document.getElementById("diagonal").innerHTML = "DIAGONAL = " + diagonal.toFixed(4);
 });

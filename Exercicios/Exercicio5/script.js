@@ -6,5 +6,5 @@ btn.addEventListener("click", function(e){
     var pi = 3.14159
     var area = pi * raio**2;    
 
-    mostra = document.getElementById("resultado").innerHTML = "ÁREA = " + area.toFixed(3);
+    document.getElementById("resultado").innerHTML = "ÁREA = " + area.toFixed(3);
 });

@@ -8,5 +8,5 @@ btn.addEventListener("click", function(e){
     var total = preco * qnt;
     var troco = valor - total;    
 
-    mostra = document.getElementById("troco").innerHTML = "TROCO = " + troco.toFixed(2);
+    document.getElementById("troco").innerHTML = "TROCO = " + troco.toFixed(2);
 });

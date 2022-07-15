@@ -9,5 +9,5 @@ function (e){
 
     var total = vHora * qntHrs;
 
-    var mostra = document.getElementById("resultado").innerHTML = "O pagamento para " + nome + " deve ser " + total.toFixed(2);
+    document.getElementById("resultado").innerHTML = "O pagamento para " + nome + " deve ser " + total.toFixed(2);
 });

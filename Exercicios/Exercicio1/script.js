@@ -8,6 +8,6 @@ btn.addEventListener("click", function(e){
     var area = largura * comprimento;
     var preco = area * valorMetro;    
 
-    mostra = document.getElementById("area").innerHTML = "A área do terreno = " + area.toFixed(2);
-    mostra2 = document.getElementById("preco").innerHTML = "Preço do terreno = " + preco.toFixed(2);
+    document.getElementById("area").innerHTML = "A área do terreno = " + area.toFixed(2);
+    document.getElementById("preco").innerHTML = "Preço do terreno = " + preco.toFixed(2);
 });
