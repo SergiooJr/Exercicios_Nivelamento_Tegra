@@ -6,7 +6,7 @@
     </head>
     <body>
         <h1>Exercício 2</h1>
-        <form method="post">
+        <form action="" method="post">
             <p>
                 <label>Base do retângulo: </label>
                 <input type="number" id="base" name="base">
@@ -15,13 +15,15 @@
                 <label>Altura do retângulo: </label>
                 <input type="number" id="altura" name="altura">
             </p>
-            <input type="button" onclick="capturar()" value="Enviar">
+            <input type="submit" id="btn" name="botao" value="Enviar">
         </form>
         <p id="area"></p>
         <p id="perimetro"></p>
         <p id="diagonal"></p>
-        <script>
-            function capturar(){
+        <script type="text/javascript">
+            const btn = document.querySelector("#btn");
+            btn.addEventListener("click", function(e){
+                e.preventDefault();
                 var base = document.getElementById("base").value;
                 var altura = document.getElementById("altura").value;
 
@@ -35,7 +37,7 @@
                 mostra = document.getElementById("area").innerHTML = "ÁREA = " + area.toFixed(4);
                 mostra2 = document.getElementById("perimetro").innerHTML = "PERÍMETRO = " + perimetro.toFixed(4);
                 mostra3 = document.getElementById("diagonal").innerHTML = "DIAGONAL = " + diagonal.toFixed(4);
-            }
+            });
         </script>
     </body>
 </html>
