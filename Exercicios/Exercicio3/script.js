@@ -10,6 +10,5 @@ btn.addEventListener("click", function(e){
     var ida2int = parseInt(idade2); 
     var media = (ida1int + ida2int)/2;   
     
-    console.log(media)
     mostra = document.getElementById("resultado").innerHTML = "A idade média de " + nome1 + " e " + nome2 + " é de " + media.toFixed(1);
 });
