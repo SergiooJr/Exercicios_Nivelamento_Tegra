@@ -1,8 +1,8 @@
 const btn = document.querySelector("#btn");
 btn.addEventListener("click", function(e){
     e.preventDefault();
-    var base = document.getElementById("base").value;
-    var altura = document.getElementById("altura").value;
+    var base = parseFloat(document.getElementById("base").value);
+    var altura = parseFloat(document.getElementById("altura").value);
 
     var area = base * altura;
     var perimetro = base*2 + altura*2; 

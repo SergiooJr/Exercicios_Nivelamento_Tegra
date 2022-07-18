@@ -8,5 +8,11 @@ btn.addEventListener("click", function(e){
     var total = preco * qnt;
     var troco = valor - total;    
 
-    document.getElementById("troco").innerHTML = "TROCO = " + troco.toFixed(2);
+    if(total<=valor){
+        document.getElementById("troco").innerHTML = "TROCO = " + troco.toFixed(2);
+    }
+    else{
+        var falta = total - valor
+        document.getElementById("troco").innerHTML = "DINHEIRO INSULFICIENTE. FALTAM " + falta.toFixed(2) + " REAIS";
+    }
 });

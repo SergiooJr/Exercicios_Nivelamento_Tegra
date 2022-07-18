@@ -1,9 +1,9 @@
 const btn = document.querySelector("#btn");
 btn.addEventListener("click", function(e){
     e.preventDefault();
-    var largura = document.getElementById("largura").value;
-    var comprimento = document.getElementById("comprimento").value;
-    var valorMetro = document.getElementById("valorMetro").value;
+    var largura = parseFloat(document.getElementById("largura").value);
+    var comprimento = parseFloat(document.getElementById("comprimento").value);
+    var valorMetro = parseFloat(document.getElementById("valorMetro").value);
 
     var area = largura * comprimento;
     var preco = area * valorMetro;    
