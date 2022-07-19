@@ -2,9 +2,7 @@ const btn = document.querySelector("#btn");
 btn.addEventListener("click", function(e){
     e.preventDefault();
     var sal = parseFloat(document.getElementById("sal").value);
-    var aumento;
-    var salNov;
-    var porcent = 0;
+    var aumento, salNov, porcent = 0;
 
     if(sal<1000){
         porcent = 20;
