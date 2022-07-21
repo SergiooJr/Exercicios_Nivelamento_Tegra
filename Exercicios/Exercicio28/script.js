@@ -50,5 +50,5 @@ btn.addEventListener("click", function(e){
             }
         }
     }
-    document.getElementById("resul").innerHTML = "MAIOR = " + maior + "<br>MENOR = " + menor;
+    document.getElementById("resul").innerHTML = menor + " e " + maior;
 });
