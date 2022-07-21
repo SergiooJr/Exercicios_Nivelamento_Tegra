@@ -1,0 +1,34 @@
+var resul = document.querySelector("div.resul");
+var resul2 = document.querySelector("div.resul2");
+const calcular = document.querySelector("html");
+var resultado = document.createElement("p");
+var resultado2 = document.createElement("p");
+var verifica = 0, soma = 0;
+
+calcular.addEventListener("click", () => {
+    var valor = document.getElementById("opc").value;
+    if(valor == "F" && verifica == 0){
+        verifica = 1;
+        resultado.innerHTML = '<label>Digite a temperatura em Fahrenheit: </label><input type="number" id="num" name="num">';
+        resul.appendChild(resultado);
+    }
+    if(valor == "C" && verifica == 0){
+        verifica = 1;
+        resultado.innerHTML = '<label>Digite a temperatura em Celsius: </label><input type="number" id="teste" name="num2">';
+        resul.appendChild(resultado);
+        //document.getElementById("botao").innerHTML = '<input type="submit" id="btn" value="Enviar">';
+    }
+    if(verifica == 1){
+        soma = soma + 2;
+    }
+    if(soma == 2){
+        const testando = parseFloat(document.getElementById("teste").value);
+        document.getElementById("botao").innerHTML = "resultado: " + testando;
+    }
+});
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", function(e){
+    e.preventDefault();
+
+    document.getElementById("resultado").innerHTML = "PINTOOO";
+});
