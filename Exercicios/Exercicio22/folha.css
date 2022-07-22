@@ -14,8 +14,10 @@ body{
     background-color: black;
     color: white;
     cursor: pointer;
+	width:100%;
+    height: 35px;
 }
-form{
+.master{
 	display:flex;
 	flex-direction: column;
     background-color: white;
@@ -29,7 +31,7 @@ form{
     transform: translate(-50%, -50%);
     border-radius: 8px;
 }
-form h1{
+.master h1{
 	position: relative;
 	margin-bottom: 2rem;
 	text-align: center;
@@ -44,7 +46,7 @@ form h1{
 	border-radius: 8px;
 	background: linear-gradient(90deg, rgb(131, 0, 0) 0%, rgb(236, 80, 80) 35%, rgb(243, 188, 188) 100%);
 }
-form input{
+.master input{
     width:100%;
     height: 35px;
     background-color: #f1f1f1;
@@ -53,6 +55,6 @@ form input{
 	border-radius: 5px;
     margin-top: 7px;
 }
-form article{
+.master article{
     text-align: justify;
 }
