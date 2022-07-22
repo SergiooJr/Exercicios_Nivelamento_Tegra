@@ -4,16 +4,30 @@
         <meta charset="utf-8">
         <title>Exercício 13</title>
         <script src="script.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="folha.css"/>
     </head>
     <body>
-        <h1>Exercício 13</h1>
-        <form action="" method="post">
-            <p>
-                <label>Digite a quantidade de minutos: </label>
-                <input type="number" id="minutos" name="minutos">
-            </p>
-            <input class = "botao" type="submit" id="btn" name="botao" value="Enviar"><br>
-        </form>
-        <p id="valor"></p>
+        <div class="card">
+            <form action="" method="post">
+                <h1>Exercício 13</h1>
+                <article>
+                    <h3>Enunciado</h3>
+                    <p>
+                        Uma operadora de telefonia cobra R$ 50.00 por um plano básico que dá
+                        direito a 100 minutos de telefone. Cada minuto que exceder a franquia de
+                        100 minutos custa R$ 2.00. Fazer um programa para ler a quantidade de
+                        minutos que uma pessoa consumiu, daí mostrar o valor a ser pago.
+                    </p>
+                </article>
+
+                <h3>Resolução</h3>
+                <p>
+                    <label>Digite a quantidade de minutos: </label>
+                    <input type="number" id="minutos" name="minutos">
+                </p>
+                <input class = "botao" type="submit" id="btn" name="botao" value="Enviar"><br>
+                <p id="valor"></p>
+            </form>
+        </div>
     </body>
 </html>

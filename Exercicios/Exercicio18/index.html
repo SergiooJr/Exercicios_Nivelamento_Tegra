@@ -4,21 +4,37 @@
         <meta charset="utf-8">
         <title>Exercício 18</title>
         <script src="script.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="folha.css"/>
     </head>
     <body>
-        <h1>Exercício 18</h1>
-        <form action="" method="post">
-            <p>
-                <label>Você vai digitar a temperatura em qual escala (C/F)? </label>
-                <input type="char" id="opc" name="opc">
-            </p>
-            <p>
-                <label>Digite a temperatura: </label>
-                <input type="number" id="temp" name="temp">
-            </p>
-            <input class = "botao" type="submit" id="btn" name="botao" value="Enviar"><br>
-        </form>
-        <p id="resul"></p>
+        <div class="card">
+            <form action="" method="post">
+                <h1>Exercício 18</h1>
+                <article>
+                    <h3>Enunciado</h3>
+                    <p>
+                        Deseja-se converter uma medida de temperatura da escala Celsius para
+                        Fahrenheit ou vice-versa. Para isso, você deve construir um programa que
+                        leia a letra "C" ou "F" indicando em qual escala vai ser informada uma
+                        temperatura. Em seguida, o programa deve mostrar a temperatura na
+                        outra escala com duas casas decimais. Você deve pesquisar as fórmulas
+                        para conversão de Fahrenheit->Celsius e de Celsius->Fahrenheit.
+                    </p>
+                </article>
+
+                <h3>Resolução</h3>
+                <p>
+                    <label>Você vai digitar a temperatura em qual escala (C/F)? </label>
+                    <input type="char" id="opc" name="opc">
+                </p>
+                <p>
+                    <label>Digite a temperatura: </label>
+                    <input type="number" id="temp" name="temp">
+                </p>
+                <input class = "botao" type="submit" id="btn" name="botao" value="Enviar"><br>
+                <p id="resul"></p>
+            </form>
+        </div>
     </body>
 </html>
 

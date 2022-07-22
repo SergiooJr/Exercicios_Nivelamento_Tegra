@@ -4,17 +4,31 @@
         <meta charset="utf-8">
         <title>Exercício 15</title>
         <script src="script.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="folha.css"/>
     </head>
     <body>
-        <h1>Exercício 15</h1>
-        <form action="" method="post">
-            <p>
-                <label>Digite a medida do sangue: </label>
-                <input type="number" id="medSangue" name="medSangue">
-            </p>
-            <input class = "botao" type="submit" id="btn" name="botao" value="Enviar"><br>
-        </form>
-        <p id="classificacao"></p>
+        <div class="card">
+            <form action="" method="post">
+                <h1>Exercício 15</h1>
+                <article>
+                    <h3>Enunciado</h3>
+                    <p>
+                        Fazer um programa para ler a quantidade de glicose no sangue de uma
+                        pessoa e depois mostrar na tela a classificação desta glicose de acordo
+                        com a tabela de referência abaixo:
+                        <img src="tabela.png">
+                    </p>
+                </article>
+
+                <h3>Resolução</h3>
+                <p>
+                    <label>Digite a medida do sangue: </label>
+                    <input type="number" id="medSangue" name="medSangue">
+                </p>
+                <input class = "botao" type="submit" id="btn" name="botao" value="Enviar"><br>
+                <p id="classificacao"></p>
+            </form>
+        </div>
     </body>
 </html>
 

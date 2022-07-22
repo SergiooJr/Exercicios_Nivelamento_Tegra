@@ -4,25 +4,39 @@
         <meta charset="utf-8">
         <title>Exercício 12</title>
         <script src="script.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="folha.css"/>
     </head>
     <body>
-        <h1>Exercício 12</h1>
-        <form action="" method="post">
-            <p>
-                <label>Coeficiente a: </label>
-                <input type="number" id="a" name="a">
-            </p>
-            <p>
-                <label>Coeficiente b: </label>
-                <input type="number" id="b" name="b">
-            </p>
-            <p>
-                <label>Coeficiente c: </label>
-                <input type="number" id="c" name="c">
-            </p>
-            <input class = "botao" type="submit" id="btn" name="botao" value="Enviar"><br>
-        </form>
-        <p id="x1"></p>
-        <p id="x2"></p>
+        <div class="card">
+            <form action="" method="post">
+                <h1>Exercício 12</h1>
+                <article>
+                    <h3>Enunciado</h3>
+                    <p>
+                        Fazer um programa para ler os três coeficientes de uma equação do
+                        segundo grau. Usando a fórmula de Bhaskara, calcular e mostrar os valores
+                        das raízes x1 e x2 da equação com quatro casas decimais, conforme
+                        exemplos. Se a equação não possuir raízes reais, mostrar uma mensagem.
+                    </p>
+                </article>
+
+                <h3>Resolução</h3>
+                <p>
+                    <label>Coeficiente a: </label>
+                    <input type="number" id="a" name="a">
+                </p>
+                <p>
+                    <label>Coeficiente b: </label>
+                    <input type="number" id="b" name="b">
+                </p>
+                <p>
+                    <label>Coeficiente c: </label>
+                    <input type="number" id="c" name="c">
+                </p>
+                <input class = "botao" type="submit" id="btn" name="botao" value="Enviar"><br>
+                <p id="x1"></p>
+                <p id="x2"></p>
+            </form>
+        </div>
     </body>
 </html>
