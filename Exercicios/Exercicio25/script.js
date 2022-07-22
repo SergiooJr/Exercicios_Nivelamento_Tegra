@@ -5,8 +5,6 @@ btn.addEventListener("click", function(e){
     var dataNasc = document.getElementById("dataNasc").value;
     var dia = dataNasc.split("/")[0].replace(/["0"]/g, "");
     var mes = dataNasc.split("/")[1].replace(/["0"]/g, "");
-    console.log(dia);
-    console.log(mes);
     if(dia>=21 && dia<=31 && mes == "3" || dia<=20 && mes == "4"){
         document.getElementById("resul").innerHTML = signos[1];
     }
