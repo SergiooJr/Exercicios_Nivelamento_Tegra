@@ -39,7 +39,7 @@ form h1{
 	content: "";
 	position: absolute;
 	height: 4px;
-	width: 160px;
+	width: 178px;
 	bottom: 1px;
 	border-radius: 8px;
 	background: linear-gradient(90deg, rgb(131, 0, 0) 0%, rgb(236, 80, 80) 35%, rgb(243, 188, 188) 100%);
