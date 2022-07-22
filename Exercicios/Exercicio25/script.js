@@ -3,8 +3,22 @@ btn.addEventListener("click", function(e){
     e.preventDefault();
     const signos = ["", "Áries", "Touro", "Gêmeos", "Câncer", "Leão", "Virgem", "Libra", "Escorpião", "Sagitário", "Capricórnio", "Aquário", "Peixes"];
     var dataNasc = document.getElementById("dataNasc").value;
-    var dia = dataNasc.split("/")[0].replace(/["0"]/g, "");
-    var mes = dataNasc.split("/")[1].replace(/["0"]/g, "");
+    var dia = dataNasc.split("/")[0];
+    var mes = dataNasc.split("/")[1];
+    if(dia != "10" && mes != "10"){
+        dia = dia.replace(/["0"]/g, "");
+        mes = mes.replace(/["0"]/g, "");
+    }
+    if(dia != "10" && mes == "10"){
+        dia = dia.replace(/["0"]/g, "");
+    }
+    if(mes != "10" && dia == "10"){
+        mes = mes.replace(/["0"]/g, "");
+    }
+    if(dia == "10" && mes == "10"){
+        dia = dia;
+        mes = mes;
+    }
     if(dia>=21 && dia<=31 && mes == "3" || dia<=20 && mes == "4"){
         document.getElementById("resul").innerHTML = signos[1];
     }
