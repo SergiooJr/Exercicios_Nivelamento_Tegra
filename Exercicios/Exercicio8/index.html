@@ -2,28 +2,49 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>Exercício 7</title>
+        <title>Exercício 8</title>
         <script src="script.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="folha.css"/>
     </head>
     <body>
-        <h1>Exercício 7</h1>
-        <form action="" method="post">
-            <p>
-                <label>Digite a medida A: </label>
-                <input type="number" id="medA" name="medA">
-            </p>
-            <p>
-                <label>Digite a medida B: </label>
-                <input type="number" id="medB" name="medB">
-            </p>
-            <p>
-                <label>Digite a medida C: </label>
-                <input type="number" id="medC" name="medC">
-            </p>
-            <input type="submit" id="btn" name="botao" value="Enviar">
-        </form>
-        <p id="areaQ"></p>
-        <p id="areaTri"></p>
-        <p id="areaTra"></p>
+        <div class="card">
+            <form action="" method="post">
+                <h1>Exercício 8</h1>
+                <article>
+                    <h3>Enunciado</h3>
+                    <p>
+                        Fazer um programa para ler três medidas A, B e C. Em seguida, calcular e
+                        mostrar (imprimir os dados com quatro casas decimais):
+                        <p>
+                            a) a área do quadrado que tem lado A
+                        </p>
+                        <p>
+                            b) a área do triângulo retângulo que base A e altura B
+                        </p>
+                        <p>
+                            c) a área do trapézio que tem bases A e B, e altura C
+                        </p>
+                    </p>
+                </article>
+
+                <h3>Resolução</h3>
+                <p>
+                    <label>Digite a medida A: </label>
+                    <input type="number" id="medA" name="medA">
+                </p>
+                <p>
+                    <label>Digite a medida B: </label>
+                    <input type="number" id="medB" name="medB">
+                </p>
+                <p>
+                    <label>Digite a medida C: </label>
+                    <input type="number" id="medC" name="medC">
+                </p>
+                <input class = "botao" type="submit" id="btn" name="botao" value="Enviar"><br>
+                <p id="areaQ"></p>
+                <p id="areaTri"></p>
+                <p id="areaTra"></p>
+            </form>
+        </div>
     </body>
 </html>

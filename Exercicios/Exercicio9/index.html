@@ -4,16 +4,28 @@
         <meta charset="utf-8">
         <title>Exercício 9</title>
         <script src="script.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="folha.css"/>
     </head>
     <body>
-        <h1>Exercício 9</h1>
-        <form action="" method="post">
-            <p>
-                <label>Digite a duração em segundos: </label>
-                <input type="number" id="s" name="s">
-            </p>
-            <input type="submit" id="btn" name="botao" value="Enviar">
-        </form>
-        <p id="resul"></p>
+        <div class="card">
+            <form action="" method="post">
+                <h1>Exercício 9</h1>
+                <article>
+                    <h3>Enunciado</h3>
+                    <p>
+                        Fazer um programa para ler uma duração de tempo em segundos, daí
+                        imprimir na tela esta duração no formato horas:minutos:segundos.
+                    </p>
+                </article>
+
+                <h3>Resolução</h3>
+                <p>
+                    <label>Digite a duração em segundos: </label>
+                    <input type="number" id="s" name="s">
+                </p>
+                <input class = "botao" type="submit" id="btn" name="botao" value="Enviar"><br>
+                <p id="resul"></p>
+            </form>
+        </div>
     </body>
 </html>

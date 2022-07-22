@@ -4,21 +4,35 @@
         <meta charset="utf-8">
         <title>Exercício 7</title>
         <script src="script.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="folha.css"/>
     </head>
     <body>
-        <h1>Exercício 7</h1>
-        <form action="" method="post">
-            <p>
-                <label>Distância percorrida: </label>
-                <input type="number" id="distP" name="distP">
-            </p>
-            <p>
-                <label>Combustível gasto: </label>
-                <input type="number" id="cGasto" name="cGasto">
-            </p>
-            <input type="submit" id="btn" name="botao" value="Enviar">
-        </form>
-        <p id="resultado"></p>
+        <div class="card">
+            <form action="" method="post">
+                <h1>Exercício 7</h1>
+                <article>
+                    <h3>Enunciado</h3>
+                    <p>
+                        Fazer um programa para ler a distância total (em km) percorrida por um
+                        carro, bem como o total de combustível gasto por este carro ao percorrer
+                        tal distância. Seu programa deve mostrar o consumo médio do carro, com
+                        três casas decimais.
+                    </p>
+                </article>
+
+                <h3>Resolução</h3>
+                <p>
+                    <label>Distância percorrida: </label>
+                    <input type="number" id="distP" name="distP">
+                </p>
+                <p>
+                    <label>Combustível gasto: </label>
+                    <input type="number" id="cGasto" name="cGasto">
+                </p>
+                <input class = "botao" type="submit" id="btn" name="botao" value="Enviar"><br>
+                <p id="resultado"></p>
+            </form>
+        </div>
     </body>
 </html>
 

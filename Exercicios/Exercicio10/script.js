@@ -24,7 +24,11 @@ function (e){
     }
     else if(valor2 == valor3 && valor2 < valor){
         document.getElementById("resul").innerHTML = "MENOR = " + valor2 + " (O 2° e o 3° valor são iguais)";
-    }else{
+    }
+    else if(valor == valor3 && valor < valor2){
         document.getElementById("resul").innerHTML = "MENOR = " + valor3 + " (O 1° e o 3° valor são iguais)";
+    }
+    else{
+        document.getElementById("resul").innerHTML = "PREENCHA OS VALORES!";
     }
 });

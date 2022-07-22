@@ -4,25 +4,39 @@
         <meta charset="utf-8">
         <title>Exercício 6</title>
         <script src="script.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="folha.css"/>
     </head>
     <body>
-        <h1>Exercício 6</h1>
-        <form action="" method="post">
-            <p>
-                <label>Nome: </label>
-                <input type="text" id="nome" name="nome">
-            </p>
-            <p>
-                <label>Valor por hora: </label>
-                <input type="number" id="vHora" name="vHora">
-            </p>
-            <p>
-                <label>Horas trabalhadas: </label>
-                <input type="number" id="qntHrs" name="qntHrs">
-            </p>
-            <input type="submit" id="btn" name="botao" value="Enviar">
-        </form>
-        <p id="resultado"></p>
+        <div class="card">
+            <form action="" method="post">
+                <h1>Exercício 6</h1>
+                <article>
+                    <h3>Enunciado</h3>
+                    <p>
+                        Fazer um programa para ler o nome de um(a) funcionário(a), o valor que
+                        ele(a) recebe por hora, e a quantidade de horas trabalhadas por ele(a). Ao
+                        final, mostrar o valor do pagamento do funcionário com uma mensagem
+                        explicativa, conforme exemplo.
+                    </p>
+                </article>
+
+                <h3>Resolução</h3>
+                <p>
+                    <label>Nome: </label>
+                    <input type="text" id="nome" name="nome">
+                </p>
+                <p>
+                    <label>Valor por hora: </label>
+                    <input type="number" id="vHora" name="vHora">
+                </p>
+                <p>
+                    <label>Horas trabalhadas: </label>
+                    <input type="number" id="qntHrs" name="qntHrs">
+                </p>
+                <input class = "botao" type="submit" id="btn" name="botao" value="Enviar"><br>
+                <p id="resultado"></p>
+            </form>
+        </div>
     </body>
 </html>
 

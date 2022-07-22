@@ -2,28 +2,43 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="folha.css"/>
         <title>Exercício 1</title>
         <script src="script.js" defer></script>
     </head>
     <body>
-        <h1>Exercício 1</h1>
-        <form action="" method="post">
-            <p>
-                <label>Largura do terreno: </label>
-                <input type="number" id="largura" name="largura">
-            </p>
-            <p>
-                <label>Comprimento do terreno: </label>
-                <input type="number" id="comprimento" name="comprimento">
-            </p>
-            <p>
-                <label>Valor do metro quadrado: </label>
-                <input type="number" id="valorMetro" name="valorMetro">
-            </p>
-            <input type="submit" id="btn" name="botao" value="Enviar">
-        </form>
-        <p id="area"></p>
-        <p id="preco"></p>
+        <div class="card">
+            <form action="" method="post">
+                <h1>Exercício 1</h1>
+                <article>
+                    <h3>Enunciado</h3>
+                    <p>
+                        Fazer um programa para ler as medidas da largura e comprimento de um
+                        terreno retangular com uma casa decimal, bem como o valor do metro
+                        quadrado do terreno com duas casas decimais. Em seguida, o programa
+                        deve mostrar o valor da área do terreno, bem como o valor do preço do
+                        terreno, ambos com duas casas decimais, conforme exemplo.
+                    </p>
+                </article>
+
+                <h3>Resolução</h3>
+                <p>
+                    <label>Largura do terreno: </label>
+                    <input type="number" id="largura" name="largura">
+                </p>
+                <p>
+                    <label>Comprimento do terreno: </label>
+                    <input type="number" id="comprimento" name="comprimento">
+                </p>
+                <p>
+                    <label>Valor do metro quadrado: </label>
+                    <input type="number" id="valorMetro" name="valorMetro">
+                </p>
+                <input class = "botao" type="submit" id="btn" name="botao" value="Enviar"><br>
+                <p id="area"></p>
+                <p id="preco"></p>
+            </form>
+        </div>
     </body>
 </html>
 
