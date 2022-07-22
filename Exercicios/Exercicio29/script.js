@@ -19,7 +19,7 @@ btn.addEventListener("click", function(e){
         let resultado = 0;
         for(let i = numeros.length-1; i>=0; i--){
             resultado += numeros[i] * peso;
-            peso = (peso>=9 ? 2 : peso+1) // se o peso for maior que nove, retorna dois, senão peso ++
+            peso = (peso>=9 ? 2 : peso+1) // se o peso for maior igual a nove, retorna dois, senão peso ++
         }
         modulo = resultado % 11;
         resultado = (modulo < 2 ? 0 : 11 - modulo);
